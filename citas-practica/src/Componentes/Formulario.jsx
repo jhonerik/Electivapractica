@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
 import Error from "./Error";
 
-HEAD
 const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
-
-const Formulario = ({pacientes, setPacientes, paciente}) => {
   const [nombre, setNombre] = useState('');
   const [propietario, setPropietario] = useState('');
   const [email, setEmail] = useState('');
@@ -24,7 +21,6 @@ const Formulario = ({pacientes, setPacientes, paciente}) => {
 
   //Revisión del cargue de datos en el form
   useEffect(()=>{
- HEAD
     if(Object.keys(paciente).length > 0){
       setNombre(paciente.nombre)
       setEmail(paciente.email)
@@ -32,7 +28,6 @@ const Formulario = ({pacientes, setPacientes, paciente}) => {
       setFingreso(paciente.fingreso)
       setSintomas(paciente.sintomas)
     }
-    console.log(paciente);
   }, [paciente])
   
 
@@ -55,7 +50,6 @@ const Formulario = ({pacientes, setPacientes, paciente}) => {
     propietario, 
     email, 
     fingreso, 
-<<<<<<< HEAD
     sintomas
     
   }
@@ -79,8 +73,6 @@ const Formulario = ({pacientes, setPacientes, paciente}) => {
     objetoPaciente.id = generarID();
     setPacientes([...pacientes, objetoPaciente])
     //console.log(objetoPaciente)
-    sintomas,
-    id: generarID()
   }
 
   //console.log(objetoPaciente);

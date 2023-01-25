@@ -1,7 +1,8 @@
+
 /*importar modulos*/
-import Formulario from "./components/Formulario"
-import Header from "./components/Header"
-import ListadoPaciente from "./components/ListadoPaciente"
+import Formulario from "./Componentes/Formulario"
+import Header from "./Componentes/Header"
+import ListadoPaciente from "./Components/ListadoPaciente"
 import {useState} from "react"
 
 /*Funcion creadora de la aplicación */ 
@@ -19,9 +20,7 @@ function App() {
           pacientes = {pacientes}
           setPacientes = {setPacientes}
           paciente = {paciente}
- 
           setPaciente = {setPaciente}
-
         />
         <ListadoPaciente 
           pacientes = {pacientes}
@@ -33,5 +32,3 @@ function App() {
 }
 /*Export para importar el módulo a otras partes de la app*/
 export default App
-
-
